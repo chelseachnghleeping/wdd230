@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap');
+
+:root {
+	--primary-color: #f7a4a4;
+	--secondary-color: #febe8c;
+	--tertiary-color: #fffbc1;
+	--success-color: #b6e2a1;
+
+	--header-color: #b01e68;
+	--border-color: #ccc;
+
+	--link-color: #b93160;
+}
+
+html {
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Raleway', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	color: var(--link-color);
+	text-decoration: none;
+    transition: all 0.1s ease-in-out;
+}
+
+a::after {
+	content: '➝';
+}
+
+a:hover::after {
+	margin-left: 0.5rem;
+}
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+main {
+	display: block;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.7em 0;
+	color: var(--header-color);
+}
+
+h2 {
+	margin: 2rem 0;
+	color: var(--header-color);
+}
+
+header {
+	background-color: var(--primary-color);
+	padding: 1em;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header > img {
+	width: 100%;
+	max-width: 200px;
+	border-radius: 9rem;
+}
+
+main {
+	padding: 3rem 0;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer .lastUpdated {
+    font-size: 0.8rem;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.lessons-container {
+	display: grid;
+	grid-template-columns: 4fr 4fr 4fr 4fr;
+	gap: 2rem;
+}
+
+.lessons-container div {
+	padding: 1.2rem;
+	border: 1px solid var(--border-color);
+	box-shadow: 0 1px 5px 1px var(--border-color);
+	border-radius: 0.8rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.lessons-container div:hover {
+	box-shadow: none;
+	transform: scale(1.1);
+}
+
+.lessons-container div > p {
+	font-weight: bold;
+	margin: 0 0 0.8rem;
+}
