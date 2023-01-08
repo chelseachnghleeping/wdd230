@@ -4,25 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 230 Assignment Portal</title>
     <meta name="description" content="Chngh Lee Ping's WDD230 Assignments">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap" rel="stylesheet">
-
-    <title>WDD230 Assignment Portal | Chngh Lee Ping | <BYU-Idaho></BYU-Idaho></title>
 </head>
 
 <body>
-    <header>
-        <img src="images/me.jpg" alt="My Profile Picture" width="500">
+    <header class="header">
         <h1>Chngh Lee Ping</h1>
+        <img class="profile-picture" src="images/me.jpg" alt="my profile picture">
     </header>
-    <section class="subtitle">
-        <h2>WDD 230 Assignment Portal</h2>
-    </section>
-    <br>
-    <nav>
+    <main class="main">
+        <h2>WDD 230: Assignment Portal</h2>
+        <hr>
         <ul>
-            <br>
             <li>First Activity: <a href="https://codepen.io/chelseachngh/pen/YzjpwZa">First Activity</a></li>
             <li>Lesson 2: <a href="lesson 2/"></a></li>
             <li>Lesson 3: <a href="lesson 3/"></a></li>
@@ -34,17 +30,14 @@
             <li>Lesson 9: <a href="lesson 9/"></a></li>
             <li>Lesson 10: <a href="lesson 10/"></a></li>
             <li>Lesson 11: <a href="lesson 11/"></a></li>
-        </ul>
 
-    </nav>
-    <main>
+        </ul>
     </main>
-    <footer>
-        <p>&copy; <span id="year"></span> | Chngh Lee Ping | Malaysia | <a href="http://www.byui.edu/online/" target="_blank">BYU-I Online Learning</a></p><br>
-        <p class="lastupdated">Last Updated: </p><span id="updated">      
-        </span>
-        <script src="js/date.js"></script>
+    <footer class="footer">
+        <p>&copy; 2023 | Chngh Lee Ping | Malaysia | <span>BYUI Online Learning</span></p>
+        <p class="lastupdated" id="lastModified"></p>     
     </footer>
-</body>
-    
+        <script src="js/last-modified.js" defer></script>
+    </footer>
+</body>   
 </html>
