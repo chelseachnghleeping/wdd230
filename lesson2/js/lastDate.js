@@ -1,7 +1,5 @@
-//get current year
-let currentYear = new Date().getFullYear()
-document.querySelector('span#year').innerHTML = currentYear
-
-
-//get last modified date of file
-document.querySelector('p.lastUpdated').innerHTML = 'Last Updated: ' + document.lastModified
+let lastModified = new Date(document.lastModified);
+let fullDate = lastModified.toLocaleString('en-US', {month: "2-digit", day: "2-digit", year: "numeric"});
+let time = lastModified.toLocaleString('en-GB', {hour: "2-digit", minute: "2-digit", second: "2-digit"});
+let dateTime = `Last Updated: ${fullDate} ${time}`;
+document.getElementById("lastModified").innerHTML = dateTime;
