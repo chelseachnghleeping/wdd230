@@ -1,0 +1,10 @@
+@media (min-width: 768px) and (max-width: 127px) {
+    .main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card h2 {
+        font-size: 16px;
+    }
+}
