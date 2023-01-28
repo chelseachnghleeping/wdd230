@@ -1,0 +1,15 @@
+@media only screen and (min-width: 768px) {
+    .navigation {
+        display: flex !important;
+        gap: 1rem !important;
+    }
+
+    .navigation li a {
+        width: 100% !important;
+        text-align: center !important; 
+    }
+
+    .navigation li:not(first-child) a:hover {
+        transform: scale(1.1) !important;
+    }
+}

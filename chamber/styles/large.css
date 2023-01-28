@@ -1,0 +1,29 @@
+@media only screen and (min-width: 992px) {
+    .navigation {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-evenly;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li:not(:first-child) {
+        width: 100%;
+    }
+
+    .hide li {
+        display: flex;
+    }
+
+    .navigation li a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation li:not(:first-child) a:hover {
+        transform: scale(1.1);
+        margin: 0;
+    }
+}
