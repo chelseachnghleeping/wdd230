@@ -30,3 +30,8 @@ let year = curDate.getFullYear();
 let currentDate = `${dayName}, ${curDate.getDate()}, ${monthName} ${year}`;
 
 document.getElementById("currentDate").innerHTML = currentDate
+
+/* display banner only wednesday */
+if(dayName === "Wednesday") {
+    document.getElementById("banner-top").style.display = "block";
+}
