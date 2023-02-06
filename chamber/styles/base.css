@@ -1,67 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --bg-color: #444
+}
+
 body {
-    max-width: 1000px;
-    padding: 0.5em;
-    margin: 0 auto;
-    font-family: 'Crimson Pro', serif;
+	font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
-h1, 
-h2,
-h3,
-h4 {
-    font-family: 'Kodchasan', serif;
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
 }
 
-.heading-l {
-    background-color: #bff0d4;
-    display: flex;
+header {
+    margin-bottom: 1rem;
+    background-color: var(--bg-color);
+    color: #fff;
+}
+header .headerTop{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+}
+
+header .logo {
+	display: flex;
+	align-items: center;
+    flex:  1 1 0%;
+    gap: 1rem;
+    padding-left: 0.8rem;
+}
+.footerTop {
     align-items: center;
-    justify-content: center;
+}
+.footerTop div:last-child {
+    text-align: center;
+}
+.footerTop img{
+	width: 80px;
 }
 
-.content {
-    padding: 1em;
-    margin-bottom: 2em;
-    border: dashed;
+.footerTop > div h1{
+	font-size: 18px;
+}
+.footerTop > div p{
+	font-size: 12px;
+}
+
+header .footerTop > div > h1,
+p {
+	margin: 0;
+	padding: 0;
 }
 
 nav {
-    margin: 0 auto;
+	display: none;
+	flex-direction: column;
+    width: 70%;
+	height: 100%;
+    position: absolute;
+    background-color: #ffffff;
+    border-left:1px solid #ccc;
+    color: #000;
+    top: 0;
+    right: 0;
 }
 
-nav > ul.navigation {
-    list-style: none;
-    padding: 0;
+nav div:last-child {
+    text-align: center;
+    border: none;
+    color: red;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+nav div {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+nav div:active {
+    border-color: magenta;
+    color: magenta;
+}
+
+.menu-button.open{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+nav.showMenu {
     display:flex;
+}
+
+.socials {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.socials svg {
+	width: 25px;
+	height: auto;
+}
+
+.today{
+    background-color: rgb(34, 34, 24);
+    padding: 0.8rem;
+    text-align: center;
+}
+
+
+/* MAIN */
+main {
+    margin-bottom: 1rem;
+}
+.placeholder {
+    background-color: #ccc;
+    height: 100%;
+    width: 100%;
+    min-height: 120px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+footer {
+    padding: 0.8rem;
+    background-color: var(--bg-color);
+    color: white;
+}
+
+.logoGroup {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.spotlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    gap: 1rem;
+}
+
+.spotlight > div {
+    width: 100%;
+    height: 100%;
+    min-width: 100px;
+    border: 1px solid #000;
+}
+
+.spotlight div:last-child {
+    display: none;
+}
+
+/* Join Card */
+main > div:last-child {
+    display: none;
+}
+
+.footerTop {
+    display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.navigation li:first-child {
-    display: block;
-    font-size: 2rem;
+.logoGroup {
+    display: flex;
+    flex-direction: column;
 }
 
-.hide li {
-    display: none;
+.footNotes {
+    text-align: center;
+    font-size: 12px;
 }
 
-.show li {
-    display: block;
+.footNotes p:after{
+    content: " | ";
 }
 
-.navigation li:not(:first-child) {
-    border: 1px solid #0773ed;
-    padding: 0.5rem;
-    transition: all 0.5s ease-in-out;
-}
-.navigation li:not(:first-child) a{
-    padding: 0.5rem;
-    text-decoration: none;
-    margin-bottom: 2%;
-    transition: all 0.5s ease-in-out;
-}
-
-.navigation li:not(first-child) a:hover {
-    margin-left: 2%;
+.footNotes p:last-child:after{
+    content: "";
 }
