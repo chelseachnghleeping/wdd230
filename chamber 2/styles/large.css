@@ -1,0 +1,118 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.menu-button {
+		display: none;
+	}
+
+	nav a {
+		color: #fff !important;
+		text-decoration: none;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: row;
+		background-color: transparent;
+		position: inherit;
+		color: white;
+		border-left: none;
+	}
+	nav div {
+		width: 100%;
+	}
+	nav div:first-child {
+		border-top-left-radius: 1rem;
+		border-bottom-left-radius: 1rem;
+	}
+	nav div:nth-child(4) {
+		border-top-right-radius: 1rem;
+		border-bottom-right-radius: 1rem;
+	}
+	nav div:last-child {
+		display: none;
+	}
+
+	.headerTop div.socials {
+		order: 3;
+	}
+
+	.logo img {
+		width: 120px;
+	}
+
+	.logo > div h1 {
+		font-size: 32px;
+	}
+	.logo > div p {
+		font-size: 18px;
+	}
+
+	main {
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	/* Hero Card */
+	main div:first-child {
+		grid-column: 2 / 4;
+		grid-row: 1 / 3;
+	}
+
+    /* Event */
+	main div:nth-child(2) {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+	}
+
+    /* Weather */
+	main div:nth-child(3) {
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+	}
+
+    /* New Release */
+	main div:nth-child(4) {
+		grid-column: 2/4;
+		grid-row: 3;
+	}
+
+	/* Spotlight */
+	main div:nth-child(5) {
+		grid-column: 4;
+		grid-row: 1 / span 3;
+        
+	}
+
+	/* Join Card */
+	main div:last-child {
+		grid-column: 1;
+		grid-row: 3;
+	}
+
+	.spotlight{
+        flex-direction: column;
+    }
+
+    .spotlight div:last-child {
+        display: flex;
+    }
+
+    .logoGroup h1 {
+        font-size: 24px !important;
+    }
+
+    .logoGroup p, .footerTop p   {
+        font-size: 16px !important;
+    }
+
+	.spotlight-placeholder div:last-child {
+		display: flex;
+		flex-direction: column;
+	}	
+		
+	.spotlight-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
