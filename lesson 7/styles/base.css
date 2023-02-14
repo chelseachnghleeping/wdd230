@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --bg-color: #444;
+    --button-text: #f2ddf6;
+    --button: #a881af;
+    --button-hover: #80669d;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+header {
+    margin-bottom: 1rem;
+    background-color: var(--bg-color);
+    color: #fff;
+}
+header .headerTop{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+}
+
+header .logo {
+	display: flex;
+	align-items: center;
+    flex:  1 1 0%;
+    gap: 1rem;
+    padding-left: 0.8rem;
+}
+.footerTop {
+    align-items: center;
+}
+.footerTop div:last-child {
+    text-align: center;
+}
+.footerTop img{
+	width: 80px;
+}
+
+.footerTop > div h1{
+	font-size: 18px;
+}
+.footerTop > div p{
+	font-size: 12px;
+}
+
+header .footerTop > div > h1,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	display: none;
+	flex-direction: column;
+    width: 70%;
+	height: 100%;
+    position: absolute;
+    background-color: #ffffff;
+    border-left:1px solid #ccc;
+    color: #000 !important;
+    top: 0;
+    right: 0;
+    z-index: 99;
+}
+
+nav div:last-child {
+    text-align: center;
+    border: none;
+    color: red;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+nav div {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+nav div:active {
+    border-color: magenta;
+    color: magenta;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+}
+nav a:hover, nav div:hover{
+    border-color: lightcoral;
+    color: lightcoral !important;
+}
+
+.menu-button.open{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+nav.showMenu {
+    display:flex;
+}
+
+.socials {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.socials svg {
+	width: 25px;
+	height: auto;
+}
+
+.today{
+    background-color: rgb(34, 34, 24);
+    padding: 0.8rem;
+    text-align: center;
+}
+
+
+/* MAIN */
+main {
+    margin-bottom: 1rem;
+}
+.placeholder {
+    background-color: #5783db;
+    height: 100%;
+    width: 100%;
+    min-height: 120px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+footer {
+    padding: 0.8rem;
+    background-color: var(--bg-color);
+    color: white;
+}
+
+.logoGroup {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.spotlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    gap: 1rem;
+}
+
+.spotlight > div {
+    width: 100%;
+    height: 100%;
+    min-width: 100px;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px #000;
+    padding: 0.5rem 0 ;
+}
+
+.spotlight > div:last-child {
+    display: none;
+}
+
+.spotlight_placeholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    min-height: 120px;
+    color: #fff !important;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.subParagraph {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Join Card */
+main > div:last-child {
+    display: none;
+}
+
+.footerTop {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.logoGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.footNotes {
+    text-align: center;
+    font-size: 12px;
+}
+
+.footNotes p:after{
+    content: " | ";
+}
+
+.footNotes p:last-child:after{
+    content: "";
+}
+
+.hero {
+    background-image: url('../images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+    aspect-ratio: 18/6; 
+    position: relative;
+}
+
+.hero > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero > div h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.hero-overlay{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-overlay-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero-overlay-content h4{
+    text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 2rem;
+}
+
+.weatherForecast {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.8rem;
+}
+
+.weatherForecast > p:first-child, .weatherForecast > p:nth-child(3) {
+    align-items: end;
+    text-align: right;
+}
+
+.btn {
+    background-color: var(--button);
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background-color: var(--button-hover);
+}
+
+.btn:active {
+    background-color: var(--button);
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem;
+    color: #fff;
+}
+
+.box-content h5{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: yellow;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    padding: 0;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.box-content a {
+    border-radius: 0.5rem;
+    color: var(--button-text);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+.box-content a:hover {
+    text-decoration: underline;
+}
+
+.btn.joinUs {
+    color: #fff !important;
+    width: 95%;
+    text-align: center;
+}
+
+.weather div:first-child{
+    display: flex;
+    align-items: center;
+}
+
+.weather div:first-child > p{
+    font-size: 3rem;
+}
+
+.box-content hr {
+    width: 100%;
+}
+
+.map {
+    margin-top: 0.5rem;
+}

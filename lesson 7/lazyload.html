@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="An example of lazy loading images for the loading speeds.">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="styles/base.css" />
+		<link rel="stylesheet" href="styles/medium.css" />
+		<link rel="stylesheet" href="styles/large.css" />
+		<title>Lazy Load Example</title>
+	</head>
+	<body>
+		<main>
+            <h1 class="title-center">Progressive Image Loading</h1>
+            <div class="flex-container">
+                <picture>
+                    <img src="https://via.placeholder.com/350x200?text=Placeholder+1" data-src="https://loremflickr.com/350/200/bird" alt="Photo 1">
+                </picture>
+                <picture>
+                    <img src="https://via.placeholder.com/350x200?text=Placeholder+2" data-src="https://loremflickr.com/350/200/monkey" alt="Photo 2">
+                </picture>
+                <picture>
+                    <img src="https://via.placeholder.com/350x200?text=Placeholder+3" data-src="https://loremflickr.com/350/200/dog" alt="Photo 3">
+                </picture>
+                <picture>
+                    <img src="https://via.placeholder.com/350x200?text=Placeholder+4" data-src="https://loremflickr.com/350/200/fish" alt="Photo 4">
+                </picture>
+                <picture>
+                    <img src="https://via.placeholder.com/350x200?text=Placeholder+5" data-src="https://loremflickr.com/350/200/duck" alt="Photo 5">
+                </picture>
+                <picture>
+                    <img src="https://via.placeholder.com/350x200?text=Placeholder+6" data-src="https://loremflickr.com/350/200/cat" alt="Photo 6">
+                </picture>
+            </div>
+        </main>
+					<nav>
+						<div><a href="#">Discover</a></div>
+						<div><a href="#">Directory</a></div>
+						<div><a href="#">Join</a></div>
+						<div><a href="#">Contact</a></div>
+						<div class="menu-button-close">
+							<i class="fa-sharp fa-solid fa-xmark"></i> Close
+						</div>
+					</nav>
+				</div>
+				<div class="menu-button open">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+			</div>
+
+			<div class="today"></div>
+		</header>
+		<main>
+			<!-- Hero -->
+			<div class="placeholder">
+				<div>
+					<div class="hero-overlay">
+						<picture>
+							<source
+								media="(min-width:768px)"
+								srcset="images/wdd230-org-25.jpg"
+								type="image/jpg"
+							/>
+							<source
+								media="(min-width:992px)"
+								srcset="images/wdd230-org-50.jpg"
+								type="image/jpg"
+							/>
+							<img
+								src="images/wdd230-org.jpg"
+								alt="Hero"
+								style="width: 100%"
+							/>
+						</picture>
+
+						<div class="hero-overlay-content">
+							<h4>Welcome to Malaysia</h4>
+							<a href="#" class="btn">Explore more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Events -->
+			<div class="placeholder">
+				<div class="box-content">
+					<h5>Ribbon Cutting</h5>
+					<p>The Diamond Stack</p>
+					<p class="text-center">
+						Join us for the grand opening of The Diamond Shack,
+						Thursday at 1:00pm
+					</p>
+					<a href="#">more info...</a>
+				</div>
+			</div>
+			<!-- Weather -->
+			<div class="placeholder">
+				<div class="box-content">
+					<h5>Weather</h5>
+					<div class="weather">
+						<div>
+							<img
+								src="images/weather.png"
+								width="120"
+								alt="Weather"
+							/>
+							<p>33<sup>o</sup>C</p>
+						</div>
+					</div>
+					<div>
+						<p>Partly Cloudy</p>
+					</div>
+					<hr />
+					<div>
+						<div class="weatherForecast">
+							
+								<p>Wind speed:</p>
+								<span id="windSpeed"></span>
+							
+								<p>Wind chill:</p>
+								<span id="windChill"></span>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- New Release -->
+			<div class="placeholder">
+				<div class="box-content">
+					<h5>New Release</h5>
+					<p class="text-center">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+						sed do eiusmod tempor incididunt ut labore et dolore
+						magna aliqua. Ut enim ad minim veniam
+					</p>
+				</div>
+			</div>
+			<!-- Spotlights -->
+			<div class="placeholder">
+				<div class="spotlight">
+					<div class="spotlight_placeholder">
+						<div class="box-content">
+							<h5>Thankful Support</h5>
+						</div>
+						<div class="spotlight-content text-center">
+							<img
+								src="images/truck.png"
+								alt="Truck"
+								width="120px"
+							/>
+							<p class="subParagraph">
+								"We get it there for you"
+							</p>
+							<hr />
+							<p>hello@thankfulsupport.com</p>
+							<p>+(60)) 9999-9999</p>
+							<p>www.thankfulsupport.com</p>
+						</div>
+					</div>
+					<div class="spotlight-placeholder">
+						<div class="box-content">
+							<h5>Colorful Primera</h5>
+						</div>
+						<div class="spotlight-content text-center text-white">
+							<img
+								src="images/coding.png"
+								alt="Coding"
+								width="120px"
+							/>
+							<p class="subParagraph">
+								An after school coding<br />
+								instructional program.
+							</p>
+							<hr />
+							<p>hello@codeprimera.com</p>
+							<p>+(60) 9999-9999</p>
+							<p>www.codeprimera.com</p>
+						</div>
+					</div>
+					<div class="spotlight_placeholder">
+						<div class="box-content">
+							<h5>Save the trees</h5>
+						</div>
+						<div class="spotlight-content text-center">
+							<img
+								src="images/tree.png"
+								alt="Tree"
+								width="120px"
+							/>
+							<p class="subParagraph">Plant a tree now</p>
+							<hr />
+							<p>hello@savethetrees.com</p>
+							<p>+(60) 8888-9999</p>
+							<p>www.savethetrees.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Join Us -->
+			<div class="placeholder">
+				<div class="box-content">
+					<a href="#" class="btn text-white joinUs">Join us</a>
+					<p class="text-center">
+						Discover how to join the chamber of commerce and how it
+						will benefit your organization
+					</p>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div>
+				<div class="footerTop">
+					<div class="logoGroup">
+						<img
+							src="https://cdn1.iconfinder.com/data/icons/Futurosoft%20Icons%200.5.2/128x128/apps/keyboard_layout.png"
+							alt="The world logo"
+						/>
+						<div>
+							<h1>Malaysia Chamber of Commerce</h1>
+							<p>Kuala Lumpur<br />Bukit Bintang 28</p>
+						</div>
+					</div>
+					<div>
+						<p>info@malaysia.com</p>
+						<p>+(60) 2070-2300</p>
+						<div class="map">
+							<iframe
+								title="Map"
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127576.84034742473!2d102.18146291375595!3d2.2375488177500604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1ee278e8c65dd%3A0x32a7281769e016a!2sMalacca!5e0!3m2!1sen!2smy!4v1675601310116!5m2!1sen!2smy"
+								width="100%"
+								height="150"
+								style="border: 0"
+								allowfullscreen=""
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"
+							></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr />
+			<div class="footNotes">
+				<p>&copy; <span class="copyright"></span> Malaysia Chamber</p>
+				<p><b>Chelsea Chngh </b></p>
+				<p>WDD 230 Project</p>
+				<br />
+				<p class="lastUpdated">Last modified:</p>
+			</div>
+		</footer>
+		<script src="scripts/windchill.js"></script>
+		<script src="scripts/script.js"></script>
+		
+	</body>
+</html>
